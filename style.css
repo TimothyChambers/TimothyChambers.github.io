@@ -1,18 +1,21 @@
-.form {
-	display: inline-block;
-	justify-content: center;
+form {
 	font-size: 50px;
+
+}
+
+.dicenumber{
+	width: 50px;
 }
 
 input {
-	size: 50px;
 	font-size: 50px;
 	width: 250px;
 }
 
+
+
 .total{
 	font-size: 50px;
-	justify-content: flex-end;
 }
 
 .rollbutton {
@@ -23,7 +26,15 @@ input {
 	width: 250px;
 	text-decoration: none;
 	color: white;
+	margin-left: 5%;
+	box-shadow: 10px;
 	border: none;
-	
+	align-content: center;
 }
+
+.dicenumber{
+	size: 10px;
+}
+
+
 
