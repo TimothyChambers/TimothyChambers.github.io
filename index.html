@@ -6,6 +6,7 @@
 </head>
 <body>
 	<form class="form">
+		<input type="number" id="mult" value="0"> D<input type="number" id="dice" value="0"><br>
 		Proficiency: <input type="number" id="prof" value="0"><br>
 		Modifier: <input type="number" id="mod" value="0"><br>
 		Other: <input type="number" id="oth" value="0">
@@ -18,7 +19,9 @@
 	</div>
 <script>
 	function rollFunction() {
-		var num1 = Math.floor((Math.random()*20) + 1);
+		var mult = document.getElementById("mult").value;
+		var num0 = document.getElementById("dice").value; 
+		var num1 = Math.floor((Math.random()*num0) + 1);
 		var num2 = document.getElementById("prof").value;
 		var num3 = document.getElementById("mod").value;
 		var num4 = document.getElementById("oth").value;
