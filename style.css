@@ -1,0 +1,29 @@
+.form {
+	display: inline-block;
+	justify-content: center;
+	font-size: 50px;
+}
+
+input {
+	size: 50px;
+	font-size: 50px;
+	width: 250px;
+}
+
+.total{
+	font-size: 50px;
+	justify-content: flex-end;
+}
+
+.rollbutton {
+	display: inline-block;
+	background-color: #4CAF50;
+	font-size: 50px;
+	text-decoration-color: rgb(0,0,0);
+	width: 250px;
+	text-decoration: none;
+	color: white;
+	border: none;
+	
+}
+
