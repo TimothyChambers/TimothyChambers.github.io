@@ -5,17 +5,29 @@
 	<title>d20 simulator</title>
 </head>
 <body>
-	<form class="form">
-		<input type="number" id="mult" value="0"> D<input type="number" id="dice" value="0"><br>
-		Proficiency: <input type="number" id="prof" value="0"><br>
-		Modifier: <input type="number" id="mod" value="0"><br>
-		Other: <input type="number" id="oth" value="0">
-	</form><br>
-	<br>
-	<br>
-	<div class="result">	
-		<button class="rollbutton" onclick="rollFunction()">Roll</button><br>
-		<p class="total" id="roll"></p>
+	<div>	
+		<form class="form">	
+			<table></tr>
+				<tr>
+					<td><input class="dicenumber" type="number" id="mult" value="0" size="20"></td>
+					<td><label>D</label><input type="number" id="dice" value="20"></td>
+				</tr>
+				<tr>
+					<td><label>Modifier:</label><br></td>
+					<td><input type="number" id="mod" value="0"></td>
+				</tr>
+				<tr>
+					<td><label>Proficiency:</label></td>
+					<td><input type="number" id="prof" value="0"></td>
+				</tr>
+				<tr>
+					<td><label>Other:</label></td>
+					<td><input type="number" id="oth" value="0"></td>
+				</tr>
+			</table>
+		</form>
+			<button class="rollbutton" onclick="rollFunction()">Roll</button><br>
+			<p class="total" id="roll"></p>
 	</div>
 <script>
 	function rollFunction() {
@@ -25,7 +37,7 @@
 		var num2 = document.getElementById("prof").value;
 		var num3 = document.getElementById("mod").value;
 		var num4 = document.getElementById("oth").value;
-		document.getElementById("roll").innerHTML = num1+parseInt(num2)+parseInt(num3)+parseInt(num4)
+		document.getElementById("roll").innerHTML = num1+parseInt(num2)+parseInt(num3)+parseInt(num4) 
 	}
 </script>
 </body>
