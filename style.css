@@ -3,6 +3,10 @@ form {
 
 }
 
+body {
+	background-color: #aaaa;	
+}
+
 .dicenumber{
 	width: 50px;
 }
@@ -12,13 +16,24 @@ input {
 	width: 250px;
 }
 
+.roll:hover {
+	
+}
 
 
 .total{
 	font-size: 50px;
+	background: #AAAA;
 }
 
-.rollbutton {
+
+.grid {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+}	
+
+.button {
 	display: inline-block;
 	background-color: #4CAF50;
 	font-size: 50px;
@@ -26,7 +41,19 @@ input {
 	width: 250px;
 	text-decoration: none;
 	color: white;
-	margin-left: 5%;
+	box-shadow: 10px;
+	border: none;
+	align-content: left;
+}
+
+.reset {
+	display: inline-block;
+	background-color: red;
+	font-size: 25px;
+	text-decoration-color: rgb(0,0,0);
+	width: 125px;
+	text-decoration: none;
+	color: white;
 	box-shadow: 10px;
 	border: none;
 	align-content: center;
@@ -34,6 +61,12 @@ input {
 
 .dicenumber{
 	size: 10px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
 }
 
 
