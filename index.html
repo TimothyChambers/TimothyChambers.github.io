@@ -9,7 +9,6 @@
 		<form class="form">	
 			<table></tr>
 				<tr>
-<!-- 					<td><input class="dicenumber" type="number" id="mult" value="1">*</td> -->
 					<td><label>D</label><input type="number" id="dice" value="20"></td>
 				</tr>
 				<tr>
@@ -33,14 +32,12 @@
 	</div>
 <script>
 	function rollFunction() {
-// 		var mult = document.getElementById("mult").value;
 		var num0 = document.getElementById("dice").value; 
 		var num1 = Math.floor((Math.random()*num0) + 1);
 		var num2 = document.getElementById("prof").value;
 		var num3 = document.getElementById("mod").value;
 		var num4 = document.getElementById("oth").value;
 		document.getElementById("roll").innerHTML = num1+parseInt(num2)+parseInt(num3)+parseInt(num4)
-// 							    *parseInt(mult)
 	}
 </script>
 </body>
