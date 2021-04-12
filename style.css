@@ -1,8 +1,6 @@
 form {
 	font-size: 50px;
-
 }
-
 body {
 	background-color: #aaaa;	
 }
@@ -16,16 +14,11 @@ input {
 	width: 250px;
 }
 
-.roll:hover {
-	
-}
-
 
 .total{
 	font-size: 50px;
 	background: #AAAA;
 }
-
 
 .grid {
 	display: grid;
@@ -69,5 +62,9 @@ input {
 	justify-content: center;
 }
 
+li {
+	font-size: 50px;
+	list-style: none;
+}
 
 
