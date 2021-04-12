@@ -9,6 +9,7 @@
 		<form class="form">	
 			<table></tr>
 				<tr>
+					<td><label>times</label><input type="number" id="times" value="1" ></td>
 					<td><label>D</label><input type="number" id="dice" value="20"></td>
 				</tr>
 				<tr>
@@ -24,21 +25,15 @@
 					<td><input type="number" id="oth" value="0"></td>
 				</tr>
 			</table>
-			<button input type="reset" class="reset button">Clear</button>
+			<button onclick="resetForm()" class="reset button">Clear</button>
 		</form>
-			<button class="roll button" onclick="rollFunction()">Roll</button>
+			<button id="result" class="roll button" onclick="diceResult()">Roll</button>
 			<br>
-			<p class="total" id="roll"></p>
+	<div id="roll-log">	
+		<ul>	
+		</ul>
 	</div>
-<script>
-	function rollFunction() {
-		var num0 = document.getElementById("dice").value; 
-		var num1 = Math.floor((Math.random()*num0) + 1);
-		var num2 = document.getElementById("prof").value;
-		var num3 = document.getElementById("mod").value;
-		var num4 = document.getElementById("oth").value;
-		document.getElementById("roll").innerHTML = num1+parseInt(num2)+parseInt(num3)+parseInt(num4)
-	}
-</script>
+	</div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
